@@ -42,7 +42,7 @@ function FreeTutorials() {
           </svg>
         </div>
         <p className="text-sm text-gray-600 italic">
-          "My work is especially geared towards animation and video game studio projects."
+          {t('quote')}
         </p>
       </div>
 
