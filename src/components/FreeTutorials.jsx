@@ -12,25 +12,41 @@ function FreeTutorials() {
   ];
 
   return (
-    <div className="max-w-[1680px] mx-auto px-6 pb-10">
+    <div className="max-w-[1680px] mx-auto px-4 md:px-6 pb-8 md:pb-10">
 
       {/* Tutorial List */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-6">
+      <div className="mb-[30px]">
+        <h2
+          className="text-[#000000] mt-[40px] mb-[40px] text-[22px] leading-[30px] md:text-[28px] md:leading-[36px] xl:text-[33.7px] xl:leading-[42px]"
+          style={{ fontFamily: 'Montserrat', fontWeight: 700, letterSpacing: '3.27%' }}
+        >
           {t('tutorials_title')}
         </h2>
         {tutorials.map((item, i) => (
-          <div key={i} className="py-2 text-sm">
-            <span className="text-[#00aaff] font-semibold">{item.title} </span>
-            <span className="text-gray-700">{item.desc}</span>
+          <div
+            key={i}
+            className="py-2 mb-[16px] text-[16px] leading-[24px] md:text-[18px] md:leading-[26px] xl:text-[22.5px] xl:leading-[28px]"
+          >
+            <span
+              className="text-[#03BCFC]"
+              style={{ fontFamily: 'Montserrat', fontWeight: 700, letterSpacing: '1.95%' }}
+            >
+              {item.title}{' '}
+            </span>
+            <span
+              className="text-[#000000]"
+              style={{ fontFamily: 'Montserrat', fontWeight: 400, letterSpacing: '1.95%' }}
+            >
+              {item.desc}
+            </span>
           </div>
         ))}
       </div>
 
       {/* Logo + Quote */}
-      <div className="flex flex-col items-center text-center my-10">
+      <div className="flex flex-col mt-[80px] items-center text-center my-10">
         <div className="mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="106" height="122" viewBox="0 0 106 122" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="92" viewBox="0 0 106 122" fill="none" className="md:w-[90px] md:h-[104px] xl:w-[106px] xl:h-[122px]">
             <path d="M65.2281 18.5081H87.6267V30.7638H69.4217L68.2478 31.9373V98.7957L56.0414 106.77V121.458H55.9995V27.7404L65.2281 18.5081Z" fill="#474747" />
             <path d="M68.2485 98.1879V112.833L56.041 120.809V106.162L68.2485 98.1879Z" fill="#474747" />
             <path d="M49.918 27.6987V106.685L37.7094 98.7518L37.6687 98.7111V31.8967L36.4936 30.763H18.3723V18.5083H40.7302L49.918 27.6987Z" fill="#474747" />
@@ -41,14 +57,20 @@ function FreeTutorials() {
             <path d="M18.2932 36.8069V78.8166L30.5426 86.7917V36.8069H18.2932Z" fill="#474747" />
           </svg>
         </div>
-        <p className="text-sm text-gray-600 italic">
+        <p
+          className="text-[#424242] mt-[80px] text-[20px] leading-[26px] md:text-[24px] md:leading-[30px] xl:text-[28px] xl:leading-[35px]"
+          style={{ fontFamily: 'Montserrat', fontWeight: 400, letterSpacing: '1.07%' }}
+        >
           {t('quote')}
         </p>
       </div>
 
       {/* Services Button */}
       <div className="flex flex-col gap-3">
-        <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase tracking-widest  py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200" style={{borderRadius: '10px'}}>
+        <button
+          className="w-full bg-white mb-[80px] border border-black text-black text-xs md:text-sm font-bold uppercase tracking-widest py-2 md:py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200"
+          style={{ borderRadius: '10px', fontFamily: 'Montserrat', fontWeight: 400, fontSize: '19.3px', lineHeight: '24px', letterSpacing: '1.56%' }}
+        >
           {t('services')}
         </button>
       </div>
