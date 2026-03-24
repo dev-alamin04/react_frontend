@@ -8,7 +8,7 @@ function AboutMe() {
     <div className="bg-white text-black">
 
       {/* Who I Am */}
-      <section className="bg-[#e8e8e8] text-center py-14 px-6">
+      <section className="bg-[#F1F1F1] text-center py-14 px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           {t('who_title')}
         </h2>
@@ -18,7 +18,7 @@ function AboutMe() {
 
         {/* Contact Button */}
         <div className="flex flex-col items-center gap-3 max-w-md mx-auto">
-          <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase mt-2 tracking-widest py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200">
+           <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase tracking-widest  py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200" style={{borderRadius: '10px'}}>
             {t('contact')}
           </button>
         </div>
@@ -68,7 +68,7 @@ function AboutMe() {
           </div>
 
           {/* Buy Button */}
-          <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase mt-2 tracking-widest py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200">
+           <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase tracking-widest mt-3 py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200" style={{borderRadius: '10px'}}>
             {t('buy')}
           </button>
         </div>

@@ -48,7 +48,7 @@ function FreeTutorials() {
 
       {/* Services Button */}
       <div className="flex flex-col gap-3">
-        <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase tracking-widest mt-2 py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200">
+        <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase tracking-widest  py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200" style={{borderRadius: '10px'}}>
           {t('services')}
         </button>
       </div>

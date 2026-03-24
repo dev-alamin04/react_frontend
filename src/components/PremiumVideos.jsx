@@ -40,7 +40,7 @@ function PremiumVideos() {
             </h3>
           </div>
 
-          <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase tracking-widest py-3 mt-2 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200">
+           <button className="w-full bg-white border border-black text-black text-sm font-bold uppercase tracking-widest mt-3 py-3 hover:bg-[#4F4F4F] hover:text-white hover:border-[#4F4F4F] transition-all duration-200" style={{borderRadius: '10px'}}>
             {t('join_btn')}
           </button>
         </div>
